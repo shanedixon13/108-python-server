@@ -1,0 +1,7 @@
+#activate virtual enviornment: venv\Scripts\activate    (That is with a backslash)
+
+#start server:
+py server.py     (file name after py)
+
+#install packages:
+py -m pip install <package_name>
