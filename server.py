@@ -1,9 +1,13 @@
 from re import DEBUG
 from flask import Flask, abort, render_template, request
 from mock_data import mock_data
+from flask_cors import CORS
 import json
 
 app = Flask(__name__) #two umderscore(double) (magic methods,functions,variables)
+CORS(app) #allow anyone to call the server (**DANGER, ONLY FOR DEVELOPMENT PLEASE REMOVE)
+
+
 coupon_codes=[
     {
         "code":"qwerty",
